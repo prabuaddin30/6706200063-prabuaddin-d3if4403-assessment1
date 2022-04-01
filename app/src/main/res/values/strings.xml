@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Garbage Anywhere</string>
+    <string name="garbage_anywhere">Garbage Anywhere merupakan aplikasi yang berfungsi sebagai tempat atau wadah untuk mengecek barang bekas yang anda miliki layak dijual atau tidak</string>
+    <string name="nama_barang">Nama Barang : </string>
+    <string name="jumlah_barang">Jumlah Barang : </string>
+    <string name="berat_barang">Berat Barang (kg) : </string>
+    <string name="jenis_barang">Jenis Barang : </string>
+    <string name="besi">Besi</string>
+    <string name="plastik">Plastik</string>
+    <string name="kertas">Kertas</string>
+    <string name="submit">Submit</string>
+    <string name="nilai_layak">Nilai Kelayakan : %1$.2f</string>
+    <string name="layak_jual">Layak Jual</string>
+    <string name="tidak_layak">Tidak Layak Jual</string>
+    <string name="negosiasi">Negosiasi</string>
+    <string name="kategori">Kategori : %1$s</string>
+    <string name="berat_error">Isi berat terlebih dahulu</string>
+    <string name="jumlah_error">Isi jumlah terlebih dahulu</string>
+    <string name="kategori_error">Pilih kategori terlebih dahulu</string>
+</resources>
