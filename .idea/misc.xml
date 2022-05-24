@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/drawable/circle_background.xml" value="0.1" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.123" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.123" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/font/bungee.xml" value="0.14739583333333334" />
         <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/layout/fragment_about.xml" value="0.1171875" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/layout/fragment_history.xml" value="0.11197916666666667" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/layout/fragment_hitung_barang.xml" value="0.22" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/layout/fragment_saran_aplikasi.xml" value="0.1" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/layout/item_history.xml" value="0.11197916666666667" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/menu/history_menu.xml" value="0.11197916666666667" />
+        <entry key="..\:/Semester 4/Pemrogaman Untuk Perangkat Bergerak 1/GarbageAnywhere/app/src/main/res/menu/options_menu.xml" value="0.11197916666666667" />
       </map>
     </option>
   </component>

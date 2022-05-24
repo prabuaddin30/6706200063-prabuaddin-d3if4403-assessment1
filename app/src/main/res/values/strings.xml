@@ -14,7 +14,26 @@
     <string name="tidak_layak">Tidak Layak Jual</string>
     <string name="negosiasi">Negosiasi</string>
     <string name="kategori">Kategori : %1$s</string>
+    <string name="nama_barang_error">Isi nama terlebih dahulu</string>
     <string name="berat_error">Isi berat terlebih dahulu</string>
     <string name="jumlah_error">Isi jumlah terlebih dahulu</string>
     <string name="kategori_error">Pilih kategori terlebih dahulu</string>
+    <string name="judul_layak">Mendapat Nilai Layak Jual</string>
+    <string name="judul_tidak_layak">Mendapat Nilai Tidak Layak</string>
+    <string name="judul_nego">Mendapat Nilai Negosiasi</string>
+    <string name="layak_hasil">Barang yang kamu timbang sangat layak untuk dijual, kamu akan mendapatkan keuntungan yang besar</string>
+    <string name="tidak_layak_hasil">Barang yang kamu timbang tidak cukup layak untuk dijual, lain waktu perbanyak barang yang dibawa ya</string>
+    <string name="nego_hasil">Barang yang kamu timbang masih layak mendapatkan kesempatan negosiasi untuk mendapatkan uang</string>
+    <string name="lihatsaran">Lihat Saran</string>
+    <string name="copyright">Garbage Anywhere merupakan aplikasi android khusus untuk menghitung barang yang ingin diketahui layak dijual atau tidak</string>
+    <string name="belum_ada_data">Data Kosong</string>
+    <string name="history">History</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="bagikan">Share</string>
+    <string name="bagikan_template">Berat: %1$s kg \n Jumlah: %2$s \n Jenis: %3$s\n\n%4$s\n%5$s</string>
+    <string name="hasil_x">Hasil: %1$.2f - %2$s</string>
+    <string name="kategori_x">Kategori: %1$s</string>
+    <string name="data_x">Berat: %1$.1f - Jumlah: %2$.1f - %3$s</string>
+    <string name="confirm_delete">Hapus semua history? </string>
+    <string name="batal">Batal</string>
 </resources>

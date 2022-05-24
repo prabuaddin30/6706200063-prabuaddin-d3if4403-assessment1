@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/hitungFragment">
+
+    <fragment
+        android:id="@+id/hitungFragment"
+        android:name="org.d3if0063.garbageanywhere.ui.hitung.HitungFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_hitung_barang">
+        <action
+            android:id="@+id/action_hitungFragment_to_saranAppFragment"
+            app:destination="@id/saranAppFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_hitungFragment_to_aboutAppFragment"
+            app:destination="@id/aboutAppFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saranAppFragment"
+        android:name="org.d3if0063.garbageanywhere.ui.SaranAppFragment"
+        android:label="SaranAppFragment"
+        tools:layout="@layout/fragment_saran_aplikasi">
+        <argument
+            android:name="kategori"
+            app:argType="org.d3if0063.garbageanywhere.model.KategoriJual"/>
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="org.d3if0063.garbageanywhere.ui.historiapp.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history"/>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="org.d3if0063.garbageanywhere.ui.AboutAppFragment"
+        android:label="About App"
+        tools:layout="@layout/fragment_about"/>
+</navigation>
