@@ -7,13 +7,13 @@ fun GarbageDb.hitungBarang(): HasilTimbang{
     val kategoriJual = if(jenis){
         when{
             garbage < 40.0 -> KategoriJual.TIDAKLAYAK
-            garbage >= 45.0 -> KategoriJual.LAYAK
+            garbage > 45.0 -> KategoriJual.LAYAK
             else -> KategoriJual.NEGOSIASI
         }
     } else {
         when {
             garbage < 20.0 -> KategoriJual.TIDAKLAYAK
-            garbage >= 25.0 -> KategoriJual.LAYAK
+            garbage > 25.0 -> KategoriJual.LAYAK
             else -> KategoriJual.NEGOSIASI
         }
     }

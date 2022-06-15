@@ -1,4 +1,5 @@
 package org.d3if0063.garbageanywhere.ui.hitung
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,6 +12,7 @@ import org.d3if0063.garbageanywhere.database.GarbageDb
 import org.d3if0063.garbageanywhere.model.HasilTimbang
 import org.d3if0063.garbageanywhere.model.KategoriJual
 import org.d3if0063.garbageanywhere.model.hitungBarang
+
 
 class HitungBarangViewModel(private val db: GarbageDao) : ViewModel() {
     private val hasilTimbang = MutableLiveData<HasilTimbang?>()
@@ -26,7 +28,7 @@ class HitungBarangViewModel(private val db: GarbageDao) : ViewModel() {
         hasilTimbang.value = dataBarang.hitungBarang()
 
         viewModelScope.launch { withContext(Dispatchers.IO){
-                db.insert(dataBarang)
+            db.insert(dataBarang)
             }
         }
     }

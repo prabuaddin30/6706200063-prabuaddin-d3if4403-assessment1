@@ -31,9 +31,15 @@
     <string name="hapus_histori">Hapus Histori</string>
     <string name="bagikan">Share</string>
     <string name="bagikan_template">Berat: %1$s kg \n Jumlah: %2$s \n Jenis: %3$s\n\n%4$s\n%5$s</string>
+    <string name="nilai_x">NILAI : %1$.2f</string>
     <string name="hasil_x">Hasil: %1$.2f - %2$s</string>
     <string name="kategori_x">Kategori: %1$s</string>
     <string name="data_x">Berat: %1$.1f - Jumlah: %2$.1f - %3$s</string>
     <string name="confirm_delete">Hapus semua history? </string>
     <string name="batal">Batal</string>
+    <string name="koneksi_error"></string>
+    <string name="update_channel">Update</string>
+    <string name="update_desc">Update data history</string>
+    <string name="notif_title">Data baru telah terdaftar!</string>
+    <string name="notif_text">Cek sekarang juga</string>
 </resources>

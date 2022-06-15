@@ -1,6 +1,5 @@
 package org.d3if0063.garbageanywhere.ui.hitung
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
@@ -14,6 +13,9 @@ import org.d3if0063.garbageanywhere.database.GarbageClass
 import org.d3if0063.garbageanywhere.databinding.FragmentHitungBarangBinding
 import org.d3if0063.garbageanywhere.model.HasilTimbang
 import org.d3if0063.garbageanywhere.model.KategoriJual
+import org.d3if0063.garbageanywhere.network.GarbageStatus
+
+
 
 class HitungFragment : Fragment() {
     private lateinit var binding: FragmentHitungBarangBinding
@@ -65,7 +67,10 @@ class HitungFragment : Fragment() {
             findNavController().navigate(HitungFragmentDirections.actionHitungFragmentToSaranAppFragment(it))
             viewModel.endNavigation()
         })
+
     }
+
+
 
     private fun shareData(){
         val selectedId = binding.radioGrup.checkedRadioButtonId
@@ -96,14 +101,14 @@ class HitungFragment : Fragment() {
             return
         }
 
-        val berat = binding.beratEditText.text.toString()
-        if(TextUtils.isEmpty(berat)){
+        val berat = binding.beratEditText.text.toString().toFloat()
+        if(TextUtils.isEmpty(berat.toString())){
             Toast.makeText(context, R.string.berat_error, Toast.LENGTH_LONG).show()
             return
         }
 
-        val jumlah = binding.jumlahEditText.text.toString()
-        if(TextUtils.isEmpty(jumlah)){
+        val jumlah = binding.jumlahEditText.text.toString().toFloat()
+        if(TextUtils.isEmpty(jumlah.toString())){
             Toast.makeText(context, R.string.jumlah_error, Toast.LENGTH_LONG).show()
             return
         }
@@ -116,8 +121,8 @@ class HitungFragment : Fragment() {
 
         viewModel.hitungBarang(
             nama,
-            berat.toFloat(),
-            jumlah.toFloat(),
+            berat,
+            jumlah / 100,
             selectedId == R.id.besiRadioButton
         )
     }
@@ -155,5 +160,6 @@ class HitungFragment : Fragment() {
         binding.buttonGroup.visibility = View.VISIBLE
     }
 }
+
 
 

@@ -10,6 +10,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.d3if0063.garbageanywhere.R
 import org.d3if0063.garbageanywhere.databinding.FragmentHistoryBinding
 import org.d3if0063.garbageanywhere.database.GarbageClass
+import org.d3if0063.garbageanywhere.network.GarbageStatus
 
 class HistoryFragment : Fragment() {
     private val viewModel: HistoryViewModel by lazy {
@@ -42,6 +43,26 @@ class HistoryFragment : Fragment() {
                 View.VISIBLE else View.GONE
             myAdapter.submitList(it)
         })
+        viewModel.getStatus().observe(viewLifecycleOwner, {
+            updateProgress(it)
+        })
+
+        viewModel.scheduleUpdater(requireActivity().application)
+    }
+
+    private fun updateProgress(status: GarbageStatus) {
+        when(status){
+            GarbageStatus.LOADING -> {
+                binding.progressBar.visibility = View.VISIBLE
+            }
+            GarbageStatus.SUCCESS -> {
+                binding.progressBar.visibility = View.GONE
+            }
+            GarbageStatus.FAILED -> {
+                binding.progressBar.visibility = View.GONE
+                binding.networkError.visibility = View.VISIBLE
+            }
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
